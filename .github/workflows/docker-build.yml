@@ -16,7 +16,8 @@ jobs:
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0'
+        dotnet-version: '9.0.100-preview.2' # Use the correct available preview version
+
 
       - name: Restore dependencies
         run: dotnet restore
